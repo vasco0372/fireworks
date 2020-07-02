@@ -1,0 +1,263 @@
+*{
+	box-sizing:border-box;
+}
+body{
+	font-family:'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+	color:#777777;
+	margin:0;
+}
+.wrapper{
+	width:1120px;
+	margin:0 auto;
+}
+#topTags{
+	width:960px;
+	height:60px;
+	margin-top:0px;
+	margin-left:80px;
+}
+#nameTag{
+	width:310px;
+	height:60px;
+	background-color: #4aaaa5;
+	margin-left:80px;
+	/*margin-top:80px;*/
+	color:white;
+	text-align: center;
+	float:left;
+	border-radius: 10px;
+}
+h2 {
+	margin-top:15px;
+}
+#labelTag{
+	width:220px;
+	height:60px;
+	padding-top:15px;
+	padding-bottom:25px;
+	background-color: #ffffff;
+	float:right;
+	margin-right: 50px;
+	display:inline-flex;
+}
+.labels {
+	padding-top: 0px;
+	padding-left: 5px;
+	padding-right:5px;
+	float:left;
+	text-decoration: none;
+	color:#777777;
+}
+.portfolio {
+	padding-top: 0px;
+	padding-left: 5px;
+	padding-right:5px;
+	float:left;
+	text-decoration: none;
+	color:#777777;
+	border-left: 1px solid #777777;
+	border-right: 1px solid #777777;
+}
+
+#content{
+	position:relative;
+	width:960px;
+	margin-left: 80px;
+	padding-top:20px;
+	overflow:auto;
+	background-image: url("../../images/cheap_diagonal_fabric.png");
+}
+#myPictures{
+	width: 570px;
+	margin-left:80px;
+	padding-left: 30px;
+	padding-right:15px;
+	background-color: #ffffff;
+	float:left;
+	overflow:auto;
+	margin-top:30px;
+	margin-bottom:30px;
+	padding-bottom:30px;
+}
+
+#myInfo{
+	padding-bottom: 60px;
+}
+#connect{
+	width:180px;
+	height:120px;
+	float:right;
+	background-color: #ffffff;
+	margin-right:80px;
+	margin-top:30px;
+	text-align: center;
+	padding-top:20px;
+}
+#page_Footer{
+	clear:both;
+	width:960px;
+	height:80px;
+	padding-top:30px;
+	background-color: #666666;
+	color:white;
+	text-align: center;
+	border-top:10px solid #4aaaa5;
+}
+/*classes and ids for fonts and coloring*/
+
+.heading{
+	font-family: 'Georgia', Times, Times New Roman, serif;
+	color: #4aaaa5;
+}
+.myName{
+	color:white;
+	font-family: 'Georgia', Times, Times New Roman, serif;
+	text-align:center;
+}
+#iconsDiv{
+	display:inline-block
+}
+.icons{
+	height:40px;
+	width:40px;
+	margin:5px;
+}
+.tableClass{
+	position:relative;
+}
+.sportsPics{
+	width:120px;
+	height:120px;
+	float:left;
+	margin-right:50px;
+}
+.caption {
+	position:absolute;
+	margin-right:50px;
+	top:80px;
+	width:120px;
+	height:30px;
+	padding-top:5px;
+	color:white;
+	font-family: 'Georgia', Times, Times New Roman, serif;
+	text-align: center;
+	background-color: #4aaaa5;
+	z-index: 2;
+}
+.row_1 {
+	top:80px;
+}
+.row_2 {
+	top:200px;
+}
+.row_3 {
+	top:320px;
+}
+/*styles added after reset*/
+h2{
+	font-size:1.5em;
+	font-weight: bold;
+}
+h3{
+	font-size:1.2em;
+	font-weight: bold;
+}
+#pageFooter{
+	clear:both;
+	width:960px;
+	height:80px;
+	padding-top:30px;
+	background-color: #666666;
+	color:white;
+	text-align: center;
+	border-top:10px solid #4aaaa5;
+	margin-left: 0px;
+}
+
+@media screen and (max-width: 980px){
+
+	.wrapper{
+		width:100%;
+	}
+
+	#topTags, #content {
+		width:90%;
+		margin-left: 10%;
+	}
+	#myPictures {
+		width:40%;
+		margin-left: 10%;
+	}
+
+	#connect{
+		width:25%;
+		float:right;
+		margin-left:0%;
+		margin-right: 5%;
+		margin-bottom: 20px;
+	}
+	#pageFooter{
+		width:100%;
+		clear:both;
+	}
+} 
+@media screen and (max-width: 768px){
+
+	.wrapper{
+		width:100%;
+		margin:0 auto;
+	}
+	#topTags, #content {
+		width:80%;
+	}
+		#nameTag, #labelTag{
+		width:100%;
+		margin-left: 0%;
+	}
+
+	.labels, .portfolio{
+		width:33%;
+		margin-left: 15%
+	}
+
+	#myPictures, #connect{
+		width:70%;
+		float:left;
+		margin-left:80px;
+		margin-bottom: 20px;
+	}
+	#pageFooter{
+		clear:both;
+		width:100%;
+	}
+} 
+@media screen and (max-width: 640px){
+
+
+	#topTags, #content, #myPictures {
+		width:70%;
+		margin-left: 20%
+	}
+	table{
+		clear:both;
+	}
+	#connect{
+		width:70%;
+		float:left;
+		margin-left:20%;
+		margin-bottom: 20px;
+	}
+
+	#pageFooter{
+		width:700%;
+		clear:both;
+	}
+	#nameTag, #labelTag{
+		width:100%;
+		margin-left: 0%;
+	}
+	.labels, .portfolio{
+		width:33%;
+		margin-left: 15%
+	}
+}

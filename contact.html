@@ -1,0 +1,75 @@
+<!--html file for contact page-->
+<!--main html file index-->
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>contacts.html Basic Portfolio</title>
+	<link rel="stylesheet" href="assets/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/contacts_style.css">
+	<meta name="viewport" content = "width=device-width, initial-scale=1"/>
+</head>
+<body>
+
+	<!--elements of the top box (for nameTag and contct labels)-->
+	<div id="topTags">
+		<div id="nameTag">
+			<h2 class="myName">Independence Day 2020</h2>
+		</div>
+		<div id="labelTag">
+			<a href="index.html" class="labels">About</a>
+			<a href="portfolio.html" class="portfolio">Portfolio</a>
+			<a href="contact.html" class="labels">Contact</a>
+		</div>
+	</div>
+
+	<!--elements for the content tag - About me box and connect with me box-->
+	<div id="content">
+		<section id="contact">
+			<h2 class="heading">Contact</h2>
+			<hr>
+
+			<!--input data forms -->
+
+    		<br>
+    		<form>
+        		<fieldset>
+            		<br>
+            		<legend> Please enter your information</legend>
+            		Name: <br>
+					<input class="inputClass" name = "fullName" type = "text" placeholder = "John Smith"/>
+            		<br>
+        			<br>
+
+            		Email: <br>
+					<input class="inputClass" name = "emailAddress" type = "email" required = "required" placeholder="example@gmail.com"/>
+            		<br>
+            		<br>
+            		Message:<br>
+					<input id="message" name = "message" type = "text" required = "required" placeholder = "Message"/>
+					
+				</fieldset>
+    		</form>
+    		<br>
+    		<input id="button" type = "submit" value = "Submit"/>
+		</section>
+
+		<!--elements of the connect with me box-->
+		<div id="connect" class="heading">
+			<h3>CONTACT INFO</h3>
+			<hr>
+			<div id="iconsDiv">
+				<img class="icons" src="images/icon_github.png" alt= "github icon"/>
+				<img class="icons" src="images/icon_linkedin.png" alt= "github icon"/>
+				<img class="icons" src="images/icon_stackoverflow.png" alt= "github icon"/>
+			</div>
+		</div>
+
+	</div>
+
+	<footer>
+		&#169 Copyright 2020 Ajoy Kumar 
+	</footer>
+
+</body>
+</html>
